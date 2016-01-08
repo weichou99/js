@@ -1,0 +1,457 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+	<TITLE></TITLE>
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 2cm }
+		P { margin-bottom: 0.21cm }
+		TD P { margin-bottom: 0cm }
+		TH P { margin-bottom: 0cm }
+		CODE.ctl { font-family: "Courier New", monospace }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY>
+Sameness Comparisons
+<TABLE CELLPADDING=2 CELLSPACING=2>
+	<THEAD>
+		<TR>
+			<TH>
+				<B>x</B>
+			</TH>
+			<TH>
+				<B>y</B>
+			</TH>
+			<TH>
+				<B>==</B>
+			</TH>
+			<TH>
+				<B>===</B>
+			</TH>
+			<TH>
+				<B>Object.is</B>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">undefined</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">undefined</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">null</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">null</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">&quot;foo&quot;</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">&quot;foo&quot;</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">{
+				foo: &quot;bar&quot; }</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">x</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">0</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">0</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">+0</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">-0</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">0</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">&quot;&quot;</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">&quot;&quot;</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">0</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">&quot;0&quot;</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">0</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">&quot;17&quot;</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">17</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">[1,2]</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">&quot;1,2&quot;</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">new
+				String(&quot;foo&quot;)</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">&quot;foo&quot;</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">null</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">undefined</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">null</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">undefined</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">{
+				foo: &quot;bar&quot; }</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">{
+				foo: &quot;bar&quot; }</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">new
+				String(&quot;foo&quot;)</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">new
+				String(&quot;foo&quot;)</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">0</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">null</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">0</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">NaN</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">&quot;foo&quot;</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">NaN</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">NaN</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=LEFT STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">NaN</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#ff9090">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">false</FONT></CODE></SPAN></FONT></P>
+			</TD>
+			<TD BGCOLOR="#90ff90">
+				<P ALIGN=CENTER STYLE="border: none; padding: 0cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><CODE CLASS="western"><FONT FACE="Consolas, Monaco, Andale Mono, monospace">true</FONT></CODE></SPAN></FONT></P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+</BODY>
+</HTML>
